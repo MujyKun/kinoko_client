@@ -12,10 +12,10 @@ add_library(injector SHARED
         temporarystat.cpp
         elementaldamage.cpp
         piratewings.cpp
+        damageskin.cpp
         walker.cpp
         debug.cpp
-        
-)
+  )
 
 target_precompile_headers(injector PRIVATE pch.h)
 

@@ -50,6 +50,7 @@ void __fastcall CUISysOpt__OnCreate_hook(CUISysOpt* pThis, void* _EDX, void* pDa
         "1366 x 768",
         "1600 x 900",
         "1920 x 1080",
+        "2560 x 1440",
     };
     size_t nResolution = sizeof(asResolution) / sizeof(asResolution[0]);
     for (size_t i = 0; i < nResolution; ++i) {
@@ -155,6 +156,11 @@ void __fastcall CWvsContext__SetScreenResolution_hook(CWvsContext* pThis, void* 
         case 4:
             nScreenWidth = 1920;
             nScreenHeight = 1080;
+            nAdjustCenterY = 84;
+            break;
+        case 5:
+            nScreenWidth = 2560;
+            nScreenHeight = 1440;
             nAdjustCenterY = 84;
             break;
         }
