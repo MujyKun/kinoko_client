@@ -22,10 +22,7 @@ Thanks to Aviv, Teto, and Angel
 
 static auto _ZtlSecureFuse_double = reinterpret_cast<double(__cdecl*)(double* at, unsigned int uCS)>(0x0052A210);
 static auto _ZtlSecureTear_double = reinterpret_cast<unsigned int(__fastcall*)(double* at, double t)>(0x0052B370);
-
-//auto OriginalCVecCtrl__CalcFloat = (signed int(__thiscall*)(void*, int))0x00900CB0;
 static auto CVecCtrl__CalcFloat_original = reinterpret_cast<signed int(__thiscall*)(void*, int)>(0x009934C0);
-
 
 
 void __fastcall CVecCtrl__CalcFloat_hook(void* this_, void* _EDX, int tElapse) {
