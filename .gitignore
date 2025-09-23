@@ -5,10 +5,19 @@
 # Build directories
 build/
 /CMakeFiles/
+external/CMakeFiles/
+external/Debug/
+external/Detours.dir/
+src/CMakeFiles/
+src/Debug/
 /CMakeCache.txt
 cmake_install.cmake
 Makefile
 *.vcxproj.user
+*.vcxproj.filters
+*.vcxproj
+src/launcher.dir/
+src/injector.dir/
 *.suo
 *.pdb
 *.idb
