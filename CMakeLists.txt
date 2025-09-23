@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.14)
 project(client)
 
 
-# Set a system env variable for MAPLESTORY_DIR if you just need to quickly auto build to your MapleStory folder (if you don't have a proper VS solution built).
+# Set a system env variable for MAPLESTORY_DIR if you just need to quickly auto build the DLL and EXE to your MapleStory folder (if you don't have a proper VS solution built).
 if(DEFINED ENV{MAPLESTORY_DIR})
     set(MAPLESTORY_DIR $ENV{MAPLESTORY_DIR})
     set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${MAPLESTORY_DIR}")
