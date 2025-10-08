@@ -30,7 +30,7 @@ git submodule update --init --recursive
 
 ### Manually Inject DLL (After Building DLL)
 
-This project already has auto-injection when launching Kinoko.exe, but it wasn't working for me (a contributor), but manually injecting the DLL into the client is an option.
+This project already has auto-injection when launching Kinoko.exe, but manually injecting the DLL into the client is also an option.
 
 This is something that's not really mentioned in many places. So I'll put it here for any first-timers or for anyone having issues.
 1. Download CFF Explorer.
