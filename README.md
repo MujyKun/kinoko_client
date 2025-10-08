@@ -30,9 +30,9 @@ git submodule update --init --recursive
 
 ### Manually Inject DLL (After Building DLL)
 
-It seems this project already has auto-injection when launching Kinoko.exe, but it wasn't working for me (a contributor), so I manually injected into the client.
+This project already has auto-injection when launching Kinoko.exe, but it wasn't working for me (a contributor), but manually injecting the DLL into the client is an option.
 
-This is something that's not really mentioned in many places. So I'll put it here for any first-timers or for others also having issues.
+This is something that's not really mentioned in many places. So I'll put it here for any first-timers or for anyone having issues.
 1. Download CFF Explorer.
 2. Open the CFF Explorer App -> File -> Open -> ijl15.dll
 3. Click Import Adder -> Add -> Kinoko.dll 
@@ -40,3 +40,6 @@ This is something that's not really mentioned in many places. So I'll put it her
 5. Click "Rebuild Import Table".
 6. File -> Save
 7. When you run Kinoko.exe or MapleStory.exe, it will now inject the Kinoko.dll. (Kinoko.exe is not needed if you have manually injected the DLL).
+
+### Launch Kinoko.exe
+You can set arguments to Kinoko.exe in the format:  `Kinoko.exe <IP ADDRESS> 8484`
